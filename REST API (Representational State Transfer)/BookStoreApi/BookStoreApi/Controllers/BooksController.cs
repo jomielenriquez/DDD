@@ -1,5 +1,7 @@
 ﻿using BookStoreApi.Model;
 using Microsoft.AspNetCore.Mvc;
+using BookStore.Data.Repository;
+using BookStore.Data.Context;
 
 namespace BookStoreApi.Controllers
 {
@@ -7,17 +9,16 @@ namespace BookStoreApi.Controllers
     [Route("api/[controller]")]
     public class BooksController : ControllerBase
     {
-        private static List<Book> Books = new List<Book>
-            {
-                new Book { Id = 1, Title = "The Great Gatsby", Author = "F. Scott Fitzgerald" },
-                new Book { Id = 2, Title = "To Kill a Mockingbird", Author = "Harper Lee" },
-                new Book { Id = 3, Title = "1984", Author = "George Orwell" }
-            };
+        private readonly IBookRepository _bookRepository;
+        public BooksController(IBookRepository bookRepository)
+        {
+            _bookRepository = bookRepository;
+        }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var list = Books;
+            var list = await _bookRepository.GetAllAsync();
 
             return Ok(list);
         }
@@ -26,27 +27,26 @@ namespace BookStoreApi.Controllers
         {
             var newBook = new Book
             {
-                Id = Books.Max(b => b.Id) + 1,
                 Title = book.Title,
                 Author = book.Author
             };
-            Books.Add(newBook);
-            return CreatedAtAction(nameof(Get), new { id = newBook.Id }, newBook);
+            //Books.Add(newBook);
+            return CreatedAtAction(nameof(Get), new { id = newBook.BookId }, newBook);
         }
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("{id:Guid}")]
+        public async Task<IActionResult> Get(Guid id)
         {
-            var book = Books.FirstOrDefault(b => b.Id == id);
+            var book = _bookRepository.GetAllAsync().Result.FirstOrDefault(b => b.BookId == id);
             if (book == null)
             {
                 return NotFound();
             }
             return Ok(book);
         }
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, CreateBookDto updatedBook)
+        [HttpPut("{id:Guid}")]
+        public async Task<IActionResult> Update(Guid id, CreateBookDto updatedBook)
         {
-            var book = Books.FirstOrDefault(b => b.Id == id);
+            var book = _bookRepository.GetAllAsync().Result.FirstOrDefault(b => b.BookId == id);
             if (book == null)
             {
                 return NotFound();
@@ -55,15 +55,15 @@ namespace BookStoreApi.Controllers
             book.Author = updatedBook.Author;
             return NoContent();
         }
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("{id:Guid}")]
+        public async Task<IActionResult> Delete(Guid id)
         {
-            var book = Books.FirstOrDefault(b => b.Id == id);
+            var book = _bookRepository.GetAllAsync().Result.FirstOrDefault(b => b.BookId == id);
             if (book == null)
             {
                 return NotFound();
             }
-            Books.Remove(book);
+            //Books.Remove(book);
             return NoContent();
         }
     }
