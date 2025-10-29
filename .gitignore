@@ -4,4 +4,9 @@
 *.suo
 *.userosscache
 *.sln.docstates
-.vs/BookStoreApi/DesignTimeBuild/.dtbcache.v2
+*.vs/BookStoreApi/DesignTimeBuild/.dtbcache.v2
+*.vs/BookStoreApi/
+*.vs/BookStoreApi/v17/
+*bin/*
+bin/
+obj/
