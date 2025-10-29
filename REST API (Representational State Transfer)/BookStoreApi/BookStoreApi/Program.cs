@@ -84,6 +84,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/error");
+}
+
 app.UseHttpsRedirection();
 
 // Add Authentication and Authorization middleware
