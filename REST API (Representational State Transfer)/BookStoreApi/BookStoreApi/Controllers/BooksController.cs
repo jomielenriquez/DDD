@@ -21,12 +21,20 @@ namespace BookStoreApi.Controllers
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetBooks([FromQuery] string? search, [FromQuery] string? sortBy, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
-            var list = await _bookRepository.GetAllAsync();
-            var listDto = _mapper.Map<IEnumerable<CreateBookDto>>(list);
-            return Ok(listDto);
+            var books = await _bookRepository.GetBooksAsync(search, sortBy, page, pageSize);
+            var booksDto = _mapper.Map<IEnumerable<CreateBookDto>>(books);
+            return Ok(books);
         }
+        //[Authorize(Roles = "Admin")]
+        //[HttpGet]
+        //public async Task<IActionResult> Get()
+        //{
+        //    var list = await _bookRepository.GetAllAsync();
+        //    var listDto = _mapper.Map<IEnumerable<CreateBookDto>>(list);
+        //    return Ok(listDto);
+        //}
         [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(CreateBookDto book)

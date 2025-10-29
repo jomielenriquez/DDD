@@ -14,5 +14,6 @@ namespace BookStore.Data.Repository
         Task<Book> AddAsync(Book book);
         Task DeleteAsync(Book book);
         Task UpdateAsync(Book book);
+        Task<IEnumerable<Book>> GetBooksAsync(string? search, string? sortBy, int page = 1, int pageSize = 10);
     }
 }
