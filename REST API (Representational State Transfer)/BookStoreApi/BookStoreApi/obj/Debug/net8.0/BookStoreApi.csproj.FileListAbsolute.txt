@@ -172,3 +172,4 @@ C:\Users\Jomiel\source\repos\DDD (Deep Dive Development)\REST API (Representatio
 C:\Users\Jomiel\source\repos\DDD (Deep Dive Development)\REST API (Representational State Transfer)\BookStoreApi\BookStoreApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Jomiel\source\repos\DDD (Deep Dive Development)\REST API (Representational State Transfer)\BookStoreApi\BookStoreApi\bin\Debug\net8.0\BookStore.Data.dll
 C:\Users\Jomiel\source\repos\DDD (Deep Dive Development)\REST API (Representational State Transfer)\BookStoreApi\BookStoreApi\bin\Debug\net8.0\BookStore.Data.pdb
+C:\Users\Jomiel\source\repos\DDD (Deep Dive Development)\REST API (Representational State Transfer)\BookStoreApi\BookStoreApi\bin\Debug\net8.0\AutoMapper.dll

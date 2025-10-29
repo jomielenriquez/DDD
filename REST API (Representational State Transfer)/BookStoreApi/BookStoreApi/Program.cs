@@ -1,11 +1,16 @@
 using BookStore.Data.Context;
-using Microsoft.EntityFrameworkCore;
 using BookStore.Data.Repository;
+using BookStoreApi.Mapping;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
+// Replace this line:
+// builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+// With this line:
+builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
