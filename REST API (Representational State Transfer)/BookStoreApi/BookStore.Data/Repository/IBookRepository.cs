@@ -10,5 +10,9 @@ namespace BookStore.Data.Repository
     public interface IBookRepository
     {
         Task<IEnumerable<Book>> GetAllAsync();
+        Task<Book?> GetByIdAsync(Guid id);
+        Task<Book> AddAsync(Book book);
+        Task DeleteAsync(Book book);
+        Task UpdateAsync(Book book);
     }
 }
