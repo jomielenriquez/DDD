@@ -1,6 +1,7 @@
 using BookStore.Data.Context;
 using BookStore.Data.Repository;
 using BookStoreApi.Mapping;
+using BookStoreApi.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -89,6 +90,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/error");
 }
 
+app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseHttpsRedirection();
 
 // Add Authentication and Authorization middleware
