@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using BookStore.Data.Repository;
 using BookStore.Data.Context;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookStoreApi.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class BooksController : ControllerBase
@@ -17,7 +19,7 @@ namespace BookStoreApi.Controllers
             _bookRepository = bookRepository;
             _mapper = mapper;
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -25,6 +27,7 @@ namespace BookStoreApi.Controllers
             var listDto = _mapper.Map<IEnumerable<CreateBookDto>>(list);
             return Ok(listDto);
         }
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(CreateBookDto book)
         {
@@ -37,6 +40,7 @@ namespace BookStoreApi.Controllers
 
             return CreatedAtAction(nameof(Get), new { id = newBook.BookId }, newBook);
         }
+        [Authorize(Roles = "Admin")]
         [HttpGet("{id:Guid}")]
         public async Task<IActionResult> Get(Guid id)
         {
@@ -48,6 +52,7 @@ namespace BookStoreApi.Controllers
             var bookDto = _mapper.Map<Book>(book);
             return Ok(bookDto);
         }
+        [Authorize(Roles = "Admin")]
         [HttpPut]
         public async Task<IActionResult> Update(CreateBookDto updatedBook)
         {
@@ -65,6 +70,7 @@ namespace BookStoreApi.Controllers
             await _bookRepository.UpdateAsync(book);
             return NoContent();
         }
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id:Guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {

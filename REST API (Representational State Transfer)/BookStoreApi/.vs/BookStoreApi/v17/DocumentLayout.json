@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|solutionrelative:bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstoreapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|solutionrelative:bookstoreapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstoreapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|solutionrelative:bookstoreapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstoreapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|solutionrelative:bookstoreapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7CDC981-EB54-48C9-9B84-4AF47387A088}|BookStore.Data\\BookStore.Data.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstore.data\\context\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7CDC981-EB54-48C9-9B84-4AF47387A088}|BookStore.Data\\BookStore.Data.csproj|solutionrelative:bookstore.data\\context\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|solutionrelative:bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstoreapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{E7CDC981-EB54-48C9-9B84-4AF47387A088}|BookStore.Data\\BookStore.Data.csproj|solutionrelative:bookstore.data\\repository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstoreapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6598A5E4-CF14-454A-9B4B-8F93F2EAF17C}|BookStoreApi\\BookStoreApi.csproj|solutionrelative:bookstoreapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7CDC981-EB54-48C9-9B84-4AF47387A088}|BookStore.Data\\BookStore.Data.csproj|c:\\users\\jomiel\\source\\repos\\ddd (deep dive development)\\rest api (representational state transfer)\\bookstoreapi\\bookstore.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7CDC981-EB54-48C9-9B84-4AF47387A088}|BookStore.Data\\BookStore.Data.csproj|solutionrelative:bookstore.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BookStoreApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BookStoreApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIA2wCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T13:18:50.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "BookStoreApi\\Mapping\\MappingProfile.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStore.Data\\Context\\Book.cs",
               "RelativeDocumentMoniker": "BookStore.Data\\Context\\Book.cs",
@@ -80,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStore.Data\\Repository\\BookRepository.cs",
               "RelativeDocumentMoniker": "BookStore.Data\\Repository\\BookRepository.cs",
@@ -93,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStore.Data\\Repository\\IBookRepository.cs",
               "RelativeDocumentMoniker": "BookStore.Data\\Repository\\IBookRepository.cs",
@@ -106,32 +123,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Program.cs",
               "RelativeDocumentMoniker": "BookStoreApi\\Program.cs",
               "ToolTip": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Program.cs",
               "RelativeToolTip": "BookStoreApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAYwDYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T13:50:58.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\appsettings.json",
               "RelativeDocumentMoniker": "BookStoreApi\\appsettings.json",
               "ToolTip": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\appsettings.json",
               "RelativeToolTip": "BookStoreApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T13:49:59.358Z"
+              "WhenOpened": "2025-10-28T13:49:59.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStore.Data\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BookStore.Data\\Context\\AppDbContext.cs",
@@ -143,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CreateBookDto.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Model\\CreateBookDto.cs",
               "RelativeDocumentMoniker": "BookStoreApi\\Model\\CreateBookDto.cs",
@@ -156,13 +174,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BooksController.cs",
               "DocumentMoniker": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "BookStoreApi\\Controllers\\BooksController.cs",
               "ToolTip": "C:\\Users\\Jomiel\\source\\repos\\DDD (Deep Dive Development)\\REST API (Representational State Transfer)\\BookStoreApi\\BookStoreApi\\Controllers\\BooksController.cs",
               "RelativeToolTip": "BookStoreApi\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDMAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T12:47:27.241Z",
               "EditorCaption": ""
