@@ -1,8 +1,11 @@
 using BookStore.Data.Context;
 using BookStore.Data.Repository;
+using BookStoreApi.Helper;
 using BookStoreApi.Mapping;
 using BookStoreApi.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -31,6 +34,26 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 // Authorization + Controllers
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
+
+builder.Services.AddApiVersioning(options =>
+{
+    // Default API version
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+
+    // If no version is specified in request, use default (v1.0)
+    options.AssumeDefaultVersionWhenUnspecified = true;
+
+    // Report supported versions in response headers
+    options.ReportApiVersions = true;
+});
+
+builder.Services.AddVersionedApiExplorer(options =>
+{
+    // Format: v1, v2, etc.
+    options.GroupNameFormat = "'v'VVV";
+    options.SubstituteApiVersionInUrl = true;
+});
+
 // Replace this line:
 // builder.Services.AddAutoMapper(typeof(MappingProfile));
 
@@ -46,8 +69,6 @@ builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore API", Version = "v1" });
-
     // Add JWT Bearer Definition
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -75,14 +96,26 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    //app.UseSwagger();
+    //app.UseSwaggerUI();
+    var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
+
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        foreach (var description in provider.ApiVersionDescriptions)
+        {
+            options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json",
+                description.GroupName.ToUpperInvariant());
+        }
+    });
 }
 
 if (!app.Environment.IsDevelopment())
